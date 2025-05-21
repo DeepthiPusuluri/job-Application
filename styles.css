@@ -1,0 +1,93 @@
+body {
+ background-color: white
+
+  color: ;
+  @import url("https://fonts.cdnfonts.com/css/x-heighting");
+  font-family: "X-Heighting", sans-serif;
+}
+form {
+  width: 500px;
+}
+fieldset {
+  border: 3px solid hsl(139, 100%, 88%);
+  border-radius: 10px;
+}
+legend {
+  color: orange;
+}
+input:required {
+  border: 3px solid red;
+  border-radius: 10px;
+}
+input:optional {
+  border: 3px dotted blue;
+  border-radius: 10px;
+}
+input:read-only {
+  background-color: rgb(112, 185, 216);
+  color: aqua;
+}
+input[type="radio"]:checked {
+  height: 20px;
+  width: 20px;
+}
+input[type="radio"]:checked + label {
+  color: greenyellow;
+}
+input[type="submit"]{
+  border: 5px solid green;
+  border-radius: 10px;
+}
+input[type="reset"]{
+    border: 5px solid green;
+    border-radius: 10px;
+}
+select{
+    background-color: blue;
+    border: 50px;
+    color: azure;
+    cursor: pointer;
+}
+input:focus{
+    background-color: crimson;
+}
+input[type="text"]+p{
+    display:none;
+
+}
+input[type="text"]:hover+p{
+    display:inline;
+
+}
+img{
+    display: none;
+}
+input[type="text"]:focus:valid~img#valid{
+    display:inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="text"]:focus:invalid~img#invalid{
+    display:inline;
+    height:20px;
+    width: 20px;
+}
+input[type="email"]:focus:valid~img#valid{
+    display:inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="email"]:focus:invalid~img#invalid{
+    display:inline;
+    height:20px;
+    width: 20px;}
+
+input[type="checkbox"]:checked{
+    height: 20px;
+    width: 20px;
+}
+textarea[name="Address"]{
+    background-color: aqua;
+    color: blue;
+    border-radius: 20px;
+}
